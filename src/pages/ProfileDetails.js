@@ -4,6 +4,7 @@ import Profile from "./Profile";
 import AddressBook from "./AddressBook"
 import OrderHistory from "./OrderHistory";
 import BookingHistory from "./BookingHistory";
+import Support from "./Support";
 // import Favorites from "./Favorites";
 
 function ProfileDetails() {
@@ -45,12 +46,12 @@ function ProfileDetails() {
           >
             Booking History
           </button>
-          {/* <button
+          <button
             className={`profile-details-button ${isButtonActive("favorites")}`}
             onClick={() => handleButtonClick("favorites")}
           >
-            Favorites
-          </button> */}
+            Support & Contact
+          </button>
           <div className={`line ${isButtonActive(activeButton)}`} />
         </div>
         <div className="profile-details-content-wrapper">
@@ -74,11 +75,11 @@ function ProfileDetails() {
               <BookingHistory />
             </div>
           )}
-          {/* {activeButton === "favorites" && (
+          {activeButton === "favorites" && (
             <div className="favorites-content">
-              <Favorites />
+              <Support />
             </div>
-          )} */}
+          )}
         </div>
       </div>
       <div className="profile-details-right-container">

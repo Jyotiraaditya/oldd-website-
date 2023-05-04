@@ -43,6 +43,7 @@ const Register = () => {
     const handlesignup = (event) => {
         event.preventDefault();
         console.log(`FirstName: ${Firstname}, LastName: ${Lastname}, MobileNumber: ${Mobilenumber}, Email: ${email}, Password: ${password} CPassword: ${cpassword}`);
+        window.location.href = "/";
     };
 
     return (

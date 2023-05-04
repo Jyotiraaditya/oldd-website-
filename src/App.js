@@ -14,6 +14,8 @@ import LoginForm from './pages/Login';
 import RegisterImage from './pages/RegisterImage';
 import Register  from './pages/Register';
 import ProfileMain from './pages/ProfileMain';
+import  UserProfileForm from './pages/ForgotPassword';
+import Cartpage from './pages/CartPage';
 
 function App() {
   const [show, setShow] = useState(false)
@@ -33,6 +35,8 @@ function App() {
             <Route path='login' element={<LoginForm/>}/>
             <Route path="/register" element={<Register/>}/>
             <Route path="/profile" element={<ProfileMain/>}/>
+            <Route path="/forgot" element={< UserProfileForm/>}/>
+            <Route path='/cartpage' element={<Cartpage />}/>
         </Route>
       </Routes>
       <Outlet/>

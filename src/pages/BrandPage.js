@@ -1,7 +1,7 @@
 import { Col, Nav, Row } from "react-bootstrap";
 import { Link, Outlet, Route, Routes } from "react-router-dom";
 import BubbaCarousel from "../components/BubbaCarousel";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import Delivery from "./Delivery";
 
 function BrandPage() {

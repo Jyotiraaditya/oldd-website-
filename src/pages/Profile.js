@@ -109,8 +109,8 @@ function Profile() {
                     </div>
                 </div>
                 <div className="profile-details-field">
-                    <div className="profile-details-field-label">Email Address:</div>
-                    <div className="profile-details-field-value">
+                    <div className="profile-details-field-label-email">Email Address:</div>
+                    <div className="profile-details-field-value-email">
                         <input
                             type="email"
                             value={email}
@@ -120,8 +120,8 @@ function Profile() {
                     </div>
                 </div>
                 <div className="profile-details-field">
-                    <div className="profile-details-field-label">Contact Number:</div>
-                    <div className="profile-details-field-value">
+                    <div className="profile-details-field-label-contact">Contact Number:</div>
+                    <div className="profile-details-field-value-contact">
                         <input
                             type="tel"
                             value={contactNumber}
@@ -131,8 +131,8 @@ function Profile() {
                     </div>
                 </div>
                 <div className="profile-details-field">
-                    <div className="profile-details-field-label">Password:</div>
-                    <div className="profile-details-field-value">
+                    <div className="profile-details-field-label-password">Password:</div>
+                    <div className="profile-details-field-value-password">
                         <input
                             type="password"
                             value={password}
@@ -142,8 +142,8 @@ function Profile() {
                     </div>
                 </div>
                 <div className="profile-details-field">
-                    <div className="profile-details-field-label">Confirm Password:</div>
-                    <div className="profile-details-field-value">
+                    <div className="profile-details-field-label-confirm">Confirm Password:</div>
+                    <div className="profile-details-field-value-confirm">
                         <input
                             type="password"
                             value={confirmPassword}

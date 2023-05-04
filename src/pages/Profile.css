@@ -18,23 +18,78 @@
     width: 100%; /* add width property */
 }
 
+.profile-fields-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .profile-details-field {
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+.profile-details-field-label {
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+   
+}
+
+.profile-details-field-value {
+    flex: 1;
 }
 
 .profile-details-field-label {
-    font-weight: bold;
+    width: 150px;
+    text-align: right;
     margin-right: 10px;
 }
 
-.profile-details-field-value input {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
+.profile-details-field-value {
+    flex: 1;
 }
+
+
+.profile-details-field-label-email {
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.profile-details-field-value-email {
+    flex: 1;
+}
+
+.profile-details-field-label-contact {
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.profile-details-field-value-contact {
+    flex: 1;
+}
+
+.profile-details-field-label-password {
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.profile-details-field-value-password {
+    flex: 1;
+}
+
+.profile-details-field-label-confirm {
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.profile-details-field-value-confirm {
+    flex: 1;
+}
+
 
 .error {
     color: red;

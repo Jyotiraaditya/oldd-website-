@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import FormImage from "./LoginImage";
+import { Link } from "react-router-dom";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -17,6 +18,8 @@ const LoginForm = () => {
   const handleLogin = (event) => {
     event.preventDefault();
     console.log(`Email: ${email}, Password: ${password}`);
+    // Navigate to home page
+    window.location.href = "/";
   };
 
   const handleCreateAccount = (event) => {
@@ -30,41 +33,43 @@ const LoginForm = () => {
   };
 
   return (
-      <>
-      <FormImage/>
-    <form className="login-form" onSubmit={handleLogin}>
-      <div className="form-group">
-        <input
-          type="email"
-          id="email"
-          placeholder="mobile number or email"
-          value={email}
-          onChange={handleEmailChange}
-          required
-        />
-      </div>
-      <div className="form-group">
-        <input
-          type="password"
-          id="password"
-          placeholder="Password"
-          value={password}
-          onChange={handlePasswordChange}
-          required
-        />
-      </div>
-      <button type="submit">Login</button>
-      <div className="login-links">
-        <a href="#" onClick={handleCreateAccount}>
-          <span>Create new account</span>
-        </a>
-        <a id="password" href="#" onClick={handleForgotPassword}>
-          Forgot password?
-        </a>
-      </div>
-    </form>
+    <>
+      <FormImage />
+      <form className="login-form" onSubmit={handleLogin}>
+        <div className="form-group">
+          <input
+            type="email"
+            id="email"
+            placeholder="Mobile number or email"
+            value={email}
+            onChange={handleEmailChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            value={password}
+            onChange={handlePasswordChange}
+            required
+          />
+        </div>
+        <button type="submit">Login</button>
+        <div className="login-links">
+          <a id="password" href="#" onClick={handleForgotPassword}>
+            <Link to="/register">Create New Account</Link>
+          </a>
+          <a id="password" href="#" onClick={handleForgotPassword}>
+            <Link to="/forgot">Forgot password?</Link>
+          </a>
+        </div>
+      </form>
     </>
   );
 };
 
 export default LoginForm;
+
+
